@@ -52,7 +52,7 @@ function Contact() {
               <Field label="Business name" required hint="However it appears on your sign."><Input value={form.business} onChange={set("business")} invalid={!!missing.business} placeholder="Lakeside Plumbing & Heating" autoComplete="organization" /></Field>
               <Field label="Phone" required><Input value={form.phone} onChange={set("phone")} invalid={!!missing.phone} placeholder="(603) 555-0100" type="tel" autoComplete="tel" /></Field>
               <Field label="Email" hint="Only needed if you'd rather we email."><Input value={form.email} onChange={set("email")} invalid={!!missing.email} placeholder="you@yourshop.com" type="email" autoComplete="email" /></Field>
-              <div style={{ gridColumn: "1 / -1" }}><Field label="Town"><Select value={form.town} onChange={set("town")} options={["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Belmont", "Moultonborough", "Alton", "Somewhere else nearby"]} /></Field></div>
+              <div style={{ gridColumn: "1 / -1" }}><Field label="Town"><Select value={form.town} onChange={set("town")} options={["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Belmont", "Moultonborough", "Alton", "Plymouth", "Concord", "Somewhere else nearby"]} /></Field></div>
               <input type="text" name="_honey" value={form._honey} onChange={set("_honey")} tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: -9999, width: 1, height: 1, opacity: 0 }} />
             </div>
             <div style={{ marginTop: "var(--space-5)" }}>

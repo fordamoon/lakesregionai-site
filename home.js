@@ -44,7 +44,7 @@ function TrustBar() {
     <div style={{ background: "var(--surface-card)", borderBottom: "1px solid var(--border-hairline)" }}>
       <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "var(--space-6) var(--gutter)", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "var(--space-7)", flexWrap: "wrap" }}>
         <span style={{ fontFamily: "var(--font-ui)", fontSize: "var(--text-label)", fontWeight: 600, color: "var(--text-muted)" }}>Working with businesses in</span>
-        {["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Moultonborough"].map((t) => (
+        {["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Moultonborough", "Plymouth", "Concord"].map((t) => (
           <span key={t} style={{ fontFamily: "var(--font-display)", fontSize: "var(--text-h4)", fontWeight: 700, color: "var(--color-lake-800)", letterSpacing: "-.01em" }}>{t}</span>
         ))}
       </div>

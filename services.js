@@ -65,7 +65,7 @@ function Services({ onNavigate }) {
         {[["Will it talk to my customers like a robot?","No. Everything customer-facing gets written in your words and approved by you before it goes live. You can shut it off from your phone."],
           ["Do I need new software?","Usually not. We work with the phone, email and scheduling you already have."],
           ["What if I want out?","Month to month after the build. You keep everything we set up and the written documentation."],
-          ["Are you local, actually?","Laconia. We drive to Wolfeboro, Meredith, Tilton and Moultonborough every week."]].map(([q, a]) => (
+          ["Are you local, actually?","Laconia. We drive to Wolfeboro, Meredith, Tilton, Moultonborough, Plymouth and Concord every week."]].map(([q, a]) => (
           <div key={q}>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "var(--text-h4)", margin: 0 }}>{q}</h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--text-body-md)", lineHeight: "var(--leading-relaxed)", color: "var(--text-body)", margin: "var(--space-2) 0 0" }}>{a}</p>

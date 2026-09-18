@@ -1,7 +1,7 @@
 const { Wordmark, Waterline, Button, NavBar } = window.LakesRegionAIDesignSystem_e86074;
 
 function Footer({ onNavigate }) {
-  const towns = ["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Belmont", "Moultonborough", "Alton"];
+  const towns = ["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Belmont", "Moultonborough", "Alton", "Plymouth", "Concord"];
   return (
     <footer style={{ background: "var(--surface-inverse)", color: "var(--text-inverse)", position: "relative", overflow: "hidden" }}>
       <img src={window.ASSETS+"winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -80, bottom: -60, width: 560, opacity: .12, filter: "invert(1)" }} />
