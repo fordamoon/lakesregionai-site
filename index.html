@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lakes Region AI — AI for the businesses your town runs on</title>
+<meta name="description" content="AI phone receptionist and automation for Lakes Region trades and small businesses. Laconia, NH. (603) 707-0720.">
+<meta property="og:title" content="Lakes Region AI — AI for the businesses your town runs on"><meta property="og:description" content="AI phone receptionist and automation for Lakes Region trades and small businesses. Laconia, NH. (603) 707-0720."><meta property="og:type" content="website">
+<link rel="canonical" href="/">
+<link rel="icon" href="assets/mark.svg">
+<link rel="stylesheet" href="styles.css">
+<script>window.ASSETS=""</script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="ds-bundle.js"></script>
+<style>html{scroll-behavior:smooth}body{background:var(--surface-page)}#root:empty{min-height:100vh}</style>
+</head><body>
+<div id="root"></div>
+<script type="text/babel" src="icon.js"></script>
+<script type="text/babel" src="shell.js"></script>
+<script type="text/babel" src="home-sections.js"></script>
+<script type="text/babel" src="shop-talk.js"></script>
+<script type="text/babel" src="home.js"></script>
+<script type="text/babel" src="services.js"></script>
+<script type="text/babel" src="about.js"></script>
+<script type="text/babel" src="contact.js"></script>
+<script type="text/babel">
+const { NavBar } = window.LakesRegionAIDesignSystem_e86074;
+const LINKS = ["What we do", "How it works", "Shop Talk", "About", "Contact"];
+const URLS = {"Home":"","How it works":"","What we do":"what-we-do/","Shop Talk":"shop-talk/","About":"about/","Contact":"contact/"};
+const PREFIX = "";
+const HREFS = Object.fromEntries(Object.entries(URLS).map(([k, v]) => [k, PREFIX + v || "./"]));
+const go = (p) => { window.location.href = PREFIX + (URLS[p] ?? ""); };
+function Page() {
+  return <>
+    <NavBar links={LINKS} hrefs={HREFS} active={null} onNavigate={go} onCta={() => go("Contact")} />
+    <Home onNavigate={go} />
+    <Footer onNavigate={go} />
+  </>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Page />);
+</script>
+</body></html>
