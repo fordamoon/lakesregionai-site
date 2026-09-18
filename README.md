@@ -7,7 +7,10 @@ Static site. No build step: open `index.html` or serve the folder.
 - `*.js` — page sections (JSX, transpiled in the browser by Babel)
 - `ds-bundle.js` — compiled Lakes Region AI design system components
 - `styles.css` — design tokens
-- `assets/` — marks, wordmarks, watermark, `owl-mark.jpg` (character mark, Shop Talk only)
+- SVG marks and `owl-mark.jpg` sit at the root — the site is deliberately FLAT (no subfolders) because GitHub's drag-and-drop uploader silently flattens directory trees. Keep it that way unless you're using git properly.
+
+## Pages
+`index.html`, `what-we-do.html`, `shop-talk.html`, `about.html`, `contact.html`. Flat filenames, not folders.
 
 ## Deployment-only changes
 Two things in this folder differ from the design system on purpose:

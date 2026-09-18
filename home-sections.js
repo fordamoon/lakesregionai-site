@@ -110,7 +110,7 @@ function Headwaters({ onNavigate }) {
   return (
     <Section tone="page" tight>
       <Card padding="lg" style={{ background: "var(--surface-inverse)", border: "none", position: "relative", overflow: "hidden" }}>
-        <img src={window.ASSETS+"assets/winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -100, top: -40, width: 480, opacity: .1, filter: "invert(1)" }} />
+        <img src={window.ASSETS+"winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -100, top: -40, width: 480, opacity: .1, filter: "invert(1)" }} />
         <div style={{ position: "relative", display: "grid", gridTemplateColumns: ".85fr 1.15fr", gap: "var(--space-10)", alignItems: "start" }}>
           <div>
             <div style={{ fontFamily: "var(--font-ui)", fontSize: "var(--text-eyebrow)", fontWeight: 600, letterSpacing: "var(--tracking-eyebrow)", textTransform: "uppercase", color: "var(--color-lake-300)" }}>Add-on · Tier 2 and 3</div>

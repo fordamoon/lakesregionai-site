@@ -4,7 +4,7 @@ function Footer({ onNavigate }) {
   const towns = ["Laconia", "Meredith", "Gilford", "Wolfeboro", "Tilton", "Belmont", "Moultonborough", "Alton"];
   return (
     <footer style={{ background: "var(--surface-inverse)", color: "var(--text-inverse)", position: "relative", overflow: "hidden" }}>
-      <img src={window.ASSETS+"assets/winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -80, bottom: -60, width: 560, opacity: .12, filter: "invert(1)" }} />
+      <img src={window.ASSETS+"winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -80, bottom: -60, width: 560, opacity: .12, filter: "invert(1)" }} />
       <div style={{ position: "relative", maxWidth: "var(--container-max)", margin: "0 auto", padding: "var(--space-11) var(--gutter) var(--space-8)" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: "var(--space-10)" }}>
           <div>
@@ -34,8 +34,8 @@ function Footer({ onNavigate }) {
         <div style={{ marginTop: "var(--space-10)", paddingTop: "var(--space-5)", borderTop: "1px solid var(--border-inverse)", display: "flex", flexWrap: "wrap", gap: "var(--space-4)", justifyContent: "space-between", fontFamily: "var(--font-ui)", fontSize: "var(--text-caption)", color: "rgba(255,255,255,.6)" }}>
           <span>© 2026 Lakes Region AI · A New Hampshire company</span>
           <span style={{ display: "flex", gap: "var(--space-6)" }}>
-            <a href={(window.ASSETS || "") + "shop-talk/"} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onNavigate && onNavigate("Shop Talk"); }} style={{ color: "rgba(255,255,255,.75)" }}>Shop Talk</a>
-            <a href={(window.ASSETS || "") + "contact/"} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onNavigate && onNavigate("Contact"); }} style={{ color: "rgba(255,255,255,.75)" }}>Contact</a>
+            <a href={"shop-talk.html"} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onNavigate && onNavigate("Shop Talk"); }} style={{ color: "rgba(255,255,255,.75)" }}>Shop Talk</a>
+            <a href={"contact.html"} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onNavigate && onNavigate("Contact"); }} style={{ color: "rgba(255,255,255,.75)" }}>Contact</a>
           </span>
         </div>
       </div>

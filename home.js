@@ -3,7 +3,7 @@ const { Button, Card, Badge, Waterline, SectionHeading, TierCard, TierMarker, Wo
 function Hero({ onNavigate }) {
   return (
     <section style={{ background: "var(--surface-inverse)", color: "#fff", position: "relative", overflow: "hidden" }}>
-      <img src={window.ASSETS+"assets/winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -120, top: 40, width: 720, opacity: .13, filter: "invert(1)" }} />
+      <img src={window.ASSETS+"winnipesaukee-watermark.svg"} alt="" style={{ position: "absolute", right: -120, top: 40, width: 720, opacity: .13, filter: "invert(1)" }} />
       <div style={{ position: "relative", maxWidth: "var(--container-max)", margin: "0 auto", padding: "var(--space-13) var(--gutter) var(--space-12)", display: "grid", gridTemplateColumns: "1.15fr .85fr", gap: "var(--space-10)", alignItems: "center" }}>
         <div>
           <div style={{ fontFamily: "var(--font-ui)", fontSize: "var(--text-eyebrow)", fontWeight: 600, letterSpacing: "var(--tracking-eyebrow)", textTransform: "uppercase", color: "var(--color-lake-300)" }}>Laconia, New Hampshire</div>

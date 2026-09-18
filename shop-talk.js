@@ -52,7 +52,7 @@ function ShopTalkTeaser({ onNavigate }) {
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "var(--space-8)", flexWrap: "wrap" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "var(--space-6)", maxWidth: 700 }}>
           <div style={{ flex: "none", width: 104, height: 104, borderRadius: "50%", overflow: "hidden", background: "#EDE9E1", border: "3px solid var(--accent)", position: "relative" }}>
-            <img src={window.ASSETS+"assets/owl-mark.jpg"} alt="" style={{ position: "absolute", width: "265%", maxWidth: "none", left: "-82.7%", top: "-6.4%", display: "block" }} />
+            <img src={window.ASSETS+"owl-mark.jpg"} alt="" style={{ position: "absolute", width: "265%", maxWidth: "none", left: "-82.7%", top: "-6.4%", display: "block" }} />
           </div>
           <SectionHeading eyebrow="Shop Talk" title="One real question, answered properly." lead="Somebody asks me something at a counter or a Chamber breakfast, and I film the answer or write it down. No tips, no trends — just the question and what I actually told them." />
         </div>
@@ -119,7 +119,7 @@ function ShopTalk({ onNavigate }) {
         <Card padding="lg">
           <div style={{ display: "flex", alignItems: "center", gap: "var(--space-5)", marginBottom: "var(--space-5)" }}>
             <div style={{ flex: "none", width: 72, height: 72, borderRadius: "50%", overflow: "hidden", background: "#EDE9E1", border: "2px solid var(--accent)", position: "relative" }}>
-              <img src={window.ASSETS+"assets/owl-mark.jpg"} alt="" style={{ position: "absolute", width: "265%", maxWidth: "none", left: "-82.7%", top: "-6.4%", display: "block" }} />
+              <img src={window.ASSETS+"owl-mark.jpg"} alt="" style={{ position: "absolute", width: "265%", maxWidth: "none", left: "-82.7%", top: "-6.4%", display: "block" }} />
             </div>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-label)", color: "var(--text-muted)" }}>Always answered</span>
           </div>
