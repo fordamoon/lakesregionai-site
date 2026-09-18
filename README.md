@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32365923/README.md)
 # lakesregionai.com — website
 
 Static site. No build step: open `index.html` or serve the folder.

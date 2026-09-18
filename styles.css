@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap");
+/* Lakes Region AI design tokens — flattened from tokens/*.css for deployment. Edit tokens in the design system, not here. */
+
+/* ===== fonts ===== */
+/* Lakes Region AI webfonts.
+   Display/signage: Oswald (condensed caps). UI + body: Libre Franklin. Data: IBM Plex Mono.
+   SUBSTITUTION NOTE: no font binaries were supplied, so the system is specified on
+   Google Fonts faces served from the Google CDN. Swap these @import lines for local
+   @font-face rules if licensed files arrive. */
+
+/* ===== colors ===== */
+:root{
+/* --- Base ramps --------------------------------------------------------- */
+/* Lake Blue — Winnipesaukee on a clear August morning; 900 is the crest navy */
+--color-lake-900:#12304A;--color-lake-800:#1B4467;--color-lake-700:#245A85;
+--color-lake-600:#2F6FA3;--color-lake-500:#3A7DB5;--color-lake-300:#8FB9D6;
+--color-lake-100:#D3E4F0;
+/* Mist — morning fog on the water (kept for soft blue panels) */
+--color-mist-100:#E9F0F7;--color-mist-50:#F2F7FB;
+/* Granite White — warm NH off-white */
+--color-granite-300:#D8D1C4;--color-granite-200:#E7E1D8;--color-granite-100:#F4F1EC;--color-granite-50:#FAF8F5;
+/* White Mountain Pine — success, and the secondary brand accent */
+--color-pine-900:#143327;--color-pine-800:#1B4232;--color-pine-700:#245741;--color-pine-600:#2E6B4F;--color-pine-100:#DCEBE3;
+/* Hammered Copper — secondary accent from the crest, used sparingly */
+--color-copper-800:#6E4520;--color-copper-700:#8F5A2B;--color-copper-600:#B0713A;
+--color-copper-500:#C2884F;--color-copper-100:#F2E2D4;
+/* Maple Amber — the accent: warmth, craftsmanship, used sparingly */
+--color-amber-800:#8A5F0B;--color-amber-700:#A8760F;--color-amber-600:#C9941C;
+--color-amber-500:#D4A024;--color-amber-100:#F6E9CB;
+/* Slate — warm grey, faint blue undertone */
+--color-slate-700:#3B4657;--color-slate-600:#4E5A6E;--color-slate-400:#7C8798;--color-slate-200:#C3CAD5;
+/* Ink & extremes */
+--color-ink:#16202B;--color-white:#FFFFFF;
+/* Brick — errors */
+--color-brick-700:#8A3526;--color-brick-600:#A8422F;--color-brick-100:#F5DFDA;
+
+/* --- Semantic aliases --------------------------------------------------- */
+--text-strong:var(--color-ink);
+--text-body:var(--color-slate-600);
+--text-muted:var(--color-slate-600);
+--text-inverse:var(--color-granite-50);
+--text-on-accent:var(--color-lake-900);
+--text-link:var(--color-lake-700);
+--text-link-hover:var(--color-lake-800);
+
+--surface-page:var(--color-granite-100);
+--surface-page-alt:var(--color-granite-50);
+--surface-card:var(--color-white);
+--surface-subtle:var(--color-mist-100);
+--surface-subtle-alt:var(--color-mist-50);
+--surface-inverse:var(--color-lake-900);
+--surface-inverse-alt:var(--color-lake-800);
+--surface-accent-soft:var(--color-amber-100);
+
+--border-hairline:var(--color-granite-200);
+--border-default:var(--color-slate-200);
+--border-strong:var(--color-slate-400);
+--border-inverse:rgba(255,255,255,.22);
+
+--action-primary:var(--color-lake-600);
+--action-primary-hover:var(--color-lake-700);
+--action-primary-active:var(--color-lake-800);
+--action-primary-text:var(--color-white);
+--action-secondary-text:var(--color-lake-700);
+--action-disabled-bg:var(--color-granite-200);
+--action-disabled-text:var(--color-slate-600);
+
+--accent:var(--color-amber-600);
+--accent-strong:var(--color-amber-700);
+--accent-soft:var(--color-amber-100);
+/* Crest accents, available but subordinate to amber */
+--accent-pine:var(--color-pine-600);
+--accent-copper:var(--color-copper-600);
+
+--waterline:var(--color-lake-300);
+--waterline-inverse:rgba(255,255,255,.38);
+--focus-ring:var(--color-lake-500);
+
+--status-success:var(--color-pine-600);
+--status-success-soft:var(--color-pine-100);
+--status-warning:var(--color-amber-700);
+--status-warning-soft:var(--color-amber-100);
+--status-error:var(--color-brick-600);
+--status-error-soft:var(--color-brick-100);
+}
+
+/* ===== typography ===== */
+:root{
+--font-display:"Oswald","Franklin Gothic Condensed",Impact,sans-serif;
+--font-ui:"Libre Franklin",-apple-system,"Segoe UI",sans-serif;
+--font-body:"Libre Franklin",-apple-system,"Segoe UI",sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+
+--text-display-1:64px;--text-display-2:48px;
+--text-h1:36px;--text-h2:28px;--text-h3:22px;--text-h4:18px;
+--text-lead:20px;--text-body-lg:18px;--text-body-md:16px;--text-body-sm:15px;
+--text-label:13px;--text-caption:12px;--text-eyebrow:12px;
+
+--leading-tight:1.02;--leading-snug:1.08;--leading-normal:1.45;--leading-relaxed:1.6;
+
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;--weight-black:800;
+
+/* Oswald is condensed: display type takes positive tracking, never negative. */
+--tracking-tight:0;--tracking-snug:.005em;--tracking-normal:0;--tracking-display:.01em;--tracking-eyebrow:.18em;--tracking-caps:.06em;
+--case-display:uppercase; /* @kind other */
+}
+
+/* ===== spacing ===== */
+:root{
+--space-0:0px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;
+--space-6:24px;--space-7:32px;--space-8:40px;--space-9:48px;--space-10:64px;
+--space-11:80px;--space-12:96px;--space-13:128px;
+
+--radius-xs:3px;--radius-sm:5px;--radius-md:8px;--radius-lg:12px;--radius-xl:18px;--radius-pill:999px;
+
+--stroke-hairline:1px;--stroke-default:1.5px;--stroke-emphasis:2px;--stroke-waterline:2px;
+}
+
+/* ===== elevation ===== */
+:root{
+/* Warm, low, single-direction shadows. No spread-heavy glows. */
+--shadow-xs:0 1px 2px rgba(22,32,43,.05);
+--shadow-sm:0 1px 2px rgba(22,32,43,.05),0 2px 6px rgba(22,32,43,.05);
+--shadow-md:0 2px 4px rgba(22,32,43,.05),0 8px 20px rgba(22,32,43,.07);
+--shadow-lg:0 4px 8px rgba(22,32,43,.05),0 18px 44px rgba(22,32,43,.10);
+--shadow-inset-hairline:inset 0 0 0 1px var(--border-hairline);
+--shadow-focus:0 0 0 3px rgba(58,125,181,.35);
+}
+
+/* ===== motion ===== */
+:root{
+--ease-out:cubic-bezier(.2,.7,.3,1); /* @kind other */
+--ease-in-out:cubic-bezier(.4,0,.2,1); /* @kind other */
+--dur-fast:120ms; /* @kind other */
+--dur-base:200ms; /* @kind other */
+--dur-slow:360ms; /* @kind other */
+--transition-control:background-color var(--dur-fast) var(--ease-out),border-color var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out);
+}
+
+/* ===== layout ===== */
+:root{
+--container-max:1120px;--container-narrow:720px;--gutter:24px;
+--section-y:96px;--section-y-tight:64px;
+--card-pad:24px;--card-pad-lg:32px;
+--control-h-sm:32px;--control-h-md:40px;--control-h-lg:48px;
+}
+
+/* ===== base ===== */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);font-size:var(--text-body-md);line-height:var(--leading-relaxed);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);color:var(--text-strong);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-display);line-height:var(--leading-snug);margin:0}
+h1,h2,h3{text-transform:var(--case-display)}
+a{color:var(--text-link);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--text-link-hover)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+
+/* ===== responsive (deployment layer — site/ only) =====
+   The component library is authored for 1280px artboards with inline grid styles,
+   so the stacking rules below have to win with !important. */
+@media (max-width:1100px){:root{--container-max:100%;--text-display-1:clamp(38px,6.6vw,64px);--text-display-2:clamp(32px,5.4vw,48px);--text-h1:clamp(27px,4.2vw,36px);--text-h2:clamp(23px,3.2vw,28px);--text-h3:clamp(20px,2.4vw,22px);--text-lead:clamp(17px,2vw,20px)}}
+@media (max-width:900px){#root [style*="grid-template-columns"]{grid-template-columns:minmax(0,1fr)!important}#root [style*="grid-template-columns: auto 1fr"]{grid-template-columns:auto minmax(0,1fr)!important}}
+@media (max-width:640px){:root{--gutter:20px;--section-y:56px;--section-y-tight:40px;--space-13:64px;--space-12:56px;--space-11:48px;--space-10:36px}}
+@media (max-width:560px){#root [style*="grid-template-columns: auto 1fr"]{grid-template-columns:minmax(0,1fr)!important}}
+img{max-width:100%}
