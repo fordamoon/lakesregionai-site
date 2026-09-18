@@ -17,8 +17,8 @@ function Footer({ onNavigate }) {
             <div style={{ fontFamily: "var(--font-ui)", fontSize: "var(--text-eyebrow)", fontWeight: 600, letterSpacing: "var(--tracking-eyebrow)", textTransform: "uppercase", color: "var(--color-lake-300)" }}>Get in touch</div>
             <Waterline width={40} tone="inverse" reflection={false} style={{ margin: "var(--space-3) 0 var(--space-4)" }} />
             <div style={{ display: "grid", gap: "var(--space-2)", fontFamily: "var(--font-mono)", fontSize: "var(--text-label)", color: "rgba(255,255,255,.85)" }}>
-              <span>(603) 707-0720</span>
-              <span>matt@lakesregionai.com</span>
+              <a href="tel:+16037070720" style={{ color: "inherit", textDecoration: "none" }}>(603) 707-0720</a>
+              <a href="mailto:matt@lakesregionai.com" style={{ color: "inherit", textDecoration: "none" }}>matt@lakesregionai.com</a>
               <span>Belknap Street, Laconia</span>
               <span style={{ color: "rgba(255,255,255,.6)" }}>Mon–Fri 7:30–5:00</span>
             </div>

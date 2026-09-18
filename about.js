@@ -8,13 +8,13 @@ function About({ onNavigate }) {
           Photo placeholder — Matt at the counter of a Lakes Region business, warm natural light, no filter
         </div>
         <div>
-          <SectionHeading eyebrow="Who you'd be working with" title="Matt Alighieri." lead="I grew up around here and I've spent fifteen years building systems for companies much larger than yours. The tools got good enough that a nine-person shop can use them too — but nobody was showing up to do it." />
+          <SectionHeading level={1} eyebrow="Who you'd be working with" title="Matt Alighieri." lead="I grew up around here and I've spent fifteen years building systems for companies much larger than yours. The tools got good enough that a nine-person shop can use them too — but nobody was showing up to do it." />
           <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--text-body-lg)", lineHeight: "var(--leading-relaxed)", color: "var(--text-body)", marginTop: "var(--space-5)" }}>
             So that's the whole business. I drive out, I watch how the work moves, and I set up two or three things that give you your evenings back. You call me directly when something needs changing. There's no account manager and no ticket queue.
           </p>
           <div style={{ display: "flex", gap: "var(--space-4)", marginTop: "var(--space-7)", flexWrap: "wrap" }}>
             <Button size="lg" onClick={() => onNavigate("Contact")}>Book a walkthrough</Button>
-            <Button size="lg" variant="secondary">Call (603) 707-0720</Button>
+            <Button size="lg" variant="secondary" onClick={() => { window.location.href = "tel:+16037070720"; }}>Call (603) 707-0720</Button>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ function About({ onNavigate }) {
             Separate practice, separate clients: growth work for the region's outdoor economy. Same person, same standards — different offer. If that's closer to what you need, we'll send you there.
           </p>
         </div>
-        <Button variant="inverse" size="lg">Visit NEGS</Button>
+        <Button variant="inverse" size="lg" onClick={() => window.open("https://newenglandgrowthstudio.com", "_blank", "noopener")}>Visit NEGS</Button>
       </div>
     </Section>
   </>;

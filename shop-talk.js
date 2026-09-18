@@ -129,7 +129,7 @@ function ShopTalk({ onNavigate }) {
           </p>
           <div style={{ display: "flex", gap: "var(--space-4)", flexWrap: "wrap" }}>
             <Button onClick={() => onNavigate && onNavigate("Contact")}>Send it over</Button>
-            <Button variant="secondary">Call (603) 707-0720</Button>
+            <Button variant="secondary" onClick={() => { window.location.href = "tel:+16037070720"; }}>Call (603) 707-0720</Button>
           </div>
         </Card>
       </div>

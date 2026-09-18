@@ -3,7 +3,7 @@
 Static site. No build step: open `index.html` or serve the folder.
 
 ## Files
-- `index.html`, `what-we-do/`, `shop-talk/`, `about/`, `contact/` — one real URL per page
+- `index.html`, `what-we-do.html`, `shop-talk.html`, `about.html`, `contact.html` — one real URL per page
 - `*.js` — page sections (JSX, transpiled in the browser by Babel)
 - `ds-bundle.js` — compiled Lakes Region AI design system components
 - `styles.css` — design tokens
@@ -34,7 +34,7 @@ Tick **Enforce HTTPS** once the cert issues.
 Edit the `.js` file for the section and commit. No build, no npm.
 
 ## Known tradeoffs
-- JSX is transpiled in the browser, so first paint is ~0.3–0.6s slower and crawlers see an empty `#root`. Fine for a local business site; if organic search becomes important, move to a Vite build.
-- The contact form is front-end only — it needs a form endpoint (Formspree, Netlify Forms, or a small serverless handler) before submissions go anywhere.
+- JSX is transpiled in the browser. Crawlers and social scrapers get a static snapshot baked into `#root` by `tools/prerender.py` — **re-run it after editing any `.js` section or `.html` shell**, then commit. React re-renders over the snapshot on load.
+- The contact form posts to FormSubmit (`contact.js`), which emails each lead to matt@lakesregionai.com (forwarded to Gmail). The endpoint key is tied to that address; if the address changes, re-activate at formsubmit.co.
 - Photography is still placeholder blocks.
-- Nav and footer links are real anchors (cmd-click and "copy link address" work), but crawlers still see an empty `#root` until React runs.
+- Nav and footer links are real anchors (cmd-click and "copy link address" work).

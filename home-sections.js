@@ -41,7 +41,7 @@ function Receptionist({ onNavigate }) {
             ))}
           </ul>
           <div style={{ display: "flex", gap: "var(--space-4)", alignItems: "center", flexWrap: "wrap" }}>
-            <Button size="lg" variant="secondary">Call it yourself: (603) 707-0720</Button>
+            <Button size="lg" variant="secondary" onClick={() => { window.location.href = "tel:+16037070720"; }}>Call it yourself: (603) 707-0720</Button>
             <span style={{ fontFamily: "var(--font-ui)", fontSize: "var(--text-body-sm)", color: "var(--text-muted)" }}>Ask it anything. It's a real line.</span>
           </div>
         </div>

@@ -33,7 +33,7 @@ function Services({ onNavigate }) {
   const data = BY_INDUSTRY[industry];
   return <>
     <Section tone="alt" tight>
-      <SectionHeading eyebrow="What we do" title="Same three tiers. Different week." lead="The work depends on your trade. Pick yours — these are the jobs we usually take off the owner's plate first." />
+      <SectionHeading level={1} eyebrow="What we do" title="Same three tiers. Different week." lead="The work depends on your trade. Pick yours — these are the jobs we usually take off the owner's plate first." />
       <div style={{ marginTop: "var(--space-8)" }}>
         <Tabs tabs={Object.keys(BY_INDUSTRY)} value={industry} onChange={setIndustry} />
       </div>

@@ -162,3 +162,6 @@ a:hover{color:var(--text-link-hover)}
 @media (max-width:640px){:root{--gutter:20px;--section-y:56px;--section-y-tight:40px;--space-13:64px;--space-12:56px;--space-11:48px;--space-10:36px}}
 @media (max-width:560px){#root [style*="grid-template-columns: auto 1fr"]{grid-template-columns:minmax(0,1fr)!important}}
 img{max-width:100%}
+
+/* Inner pages: first SectionHeading is an <h1> for search engines but keeps the h2 size the design was signed off at. */
+body[data-page="inner"] h1{font-size:var(--text-h2) !important}

@@ -157,7 +157,7 @@ function ClosingCta({ onNavigate }) {
         </div>
         <div style={{ display: "flex", gap: "var(--space-4)" }}>
           <Button size="lg" onClick={() => onNavigate("Contact")}>Book a walkthrough</Button>
-          <Button size="lg" variant="secondary">Call (603) 707-0720</Button>
+          <Button size="lg" variant="secondary" onClick={() => { window.location.href = "tel:+16037070720"; }}>Call (603) 707-0720</Button>
         </div>
       </div>
     </Section>
