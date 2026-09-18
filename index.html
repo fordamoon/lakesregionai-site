@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About — Lakes Region AI</title>
-<meta name="description" content="Matt Alighieri, 57 Belknap Street, Laconia NH. A New Hampshire company working across the Lakes Region.">
-<meta property="og:title" content="About — Lakes Region AI"><meta property="og:description" content="Matt Alighieri, 57 Belknap Street, Laconia NH. A New Hampshire company working across the Lakes Region."><meta property="og:type" content="website">
-<link rel="canonical" href="/about/">
+<title>What we do — Lakes Region AI</title>
+<meta name="description" content="Receptionist, Headwaters lead tracking, and automation built for seasonal New Hampshire businesses.">
+<meta property="og:title" content="What we do — Lakes Region AI"><meta property="og:description" content="Receptionist, Headwaters lead tracking, and automation built for seasonal New Hampshire businesses."><meta property="og:type" content="website">
+<link rel="canonical" href="/what-we-do/">
 <link rel="icon" href="../assets/mark.svg">
 <link rel="stylesheet" href="../styles.css">
 <script>window.ASSETS="../"</script>
@@ -31,8 +31,8 @@ const HREFS = Object.fromEntries(Object.entries(URLS).map(([k, v]) => [k, PREFIX
 const go = (p) => { window.location.href = PREFIX + (URLS[p] ?? ""); };
 function Page() {
   return <>
-    <NavBar links={LINKS} hrefs={HREFS} active={"About"} onNavigate={go} onCta={() => go("Contact")} />
-    <About onNavigate={go} />
+    <NavBar links={LINKS} hrefs={HREFS} active={"What we do"} onNavigate={go} onCta={() => go("Contact")} />
+    <Services onNavigate={go} />
     <Footer onNavigate={go} />
   </>;
 }
